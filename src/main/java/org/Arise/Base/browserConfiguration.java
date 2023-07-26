@@ -18,7 +18,7 @@ public class browserConfiguration {
             case "Chrome":
                 WebDriverManager.chromedriver().setup();
                 ChromeOptions chromeOptions =new ChromeOptions();
-                chromeOptions.setHeadless(false);
+                chromeOptions.setHeadless(true);
                 BaseTest.driver=new ChromeDriver(chromeOptions);
                 break;
 
